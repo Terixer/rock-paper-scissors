@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kamień, Papier, Nożyce</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
     <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-    
+    <div id="title-block">
+        <h1 id="main-title">Papier - Kamień - Nożyce</h1>
+    </div>
+    <div id="game-block">
+        <div id="score-board">
+            <div id="score">
+                <span id="computer-score">0</span>
+                :
+                <span id="user-score">0</span>
+                <div class="badge" id="computer-badge">
+                    Komputer
+                </div>
+                <div class="badge" id="user-badge">
+                    Człowiek
+                </div>
+            </div>
+            <div id="result">
+                <h3>Komputer pokazał <span id="computer-choice">kamień</span>, ty wybrałeś <span id="computer-choice">kamień</span></h3>
+                <h1 id="result-verdict">Remis!</h1>
+            </div>
+            <div id="choice">
+                <div data-choice="r" class="single-choice">
+                    <i class="far fa-hand-rock"></i>
+                </div>
+                <div data-choice="p" class="single-choice">
+                    <i class="far fa-hand-paper"></i>
+                </div>
+                <div data-choice="s" class="single-choice">
+                    <i class="far fa-hand-scissors"></i>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
